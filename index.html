@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>インベストデザイン株式会社｜大学生長期インターンシップ「HANARE」</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="crossorigin">
+<link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;500;600;700;900&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body { margin: 0; background: #f4f4ee; color: #10241a; font-family: "Zen Kaku Gothic New", "Hiragino Sans", sans-serif; -webkit-font-smoothing: antialiased; }
+  a { color: #10241a; text-decoration: none; transition: color .3s ease, background .3s ease, opacity .3s ease; }
+  a:hover { color: #1c8a4e; }
+  ::selection { background: #1c8a4e; color: #ffffff; }
+  input, textarea, button { font-family: inherit; }
+  @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(28px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes lineGrow { from { transform: scaleY(0); } to { transform: scaleY(1); } }
+
+  .nav-cta:hover { background: #1c8a4e !important; color: #ffffff !important; }
+  .voice-prev:hover { background: #0c3d25 !important; border-color: #0c3d25 !important; color: #ffffff !important; }
+  .voice-next:hover { background: #0c3d25 !important; border-color: #0c3d25 !important; }
+  .cta-white:hover { background: #ffffff !important; color: #0c3d25 !important; }
+  .form-input:focus { border-color: #1c8a4e !important; background: #ffffff !important; }
+  .reason-label:hover { border-color: #1c8a4e !important; background: #ffffff !important; }
+  .submit-btn:hover { background: #0c3d25 !important; border-color: #0c3d25 !important; }
+</style>
+</head>
+<body>
+<div style="max-width: 100%; overflow-x: hidden; background: #f4f4ee;">
+
+  <header style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; display: flex; align-items: stretch; justify-content: space-between; background: #ffffff; box-shadow: 0 1px 0 rgba(16,36,26,.1);">
+    <a href="#top" style="display: flex; align-items: center; gap: 14px; padding: 0 clamp(16px, 2.4vw, 34px); flex: none;">
+      <img src="https://higashihiroshima-intern.com/images/logo.webp" alt="インベストデザイン株式会社" style="height: 30px; width: auto;">
+    </a>
+    <nav style="display: flex; align-items: stretch; gap: 0; flex-wrap: wrap; justify-content: flex-end; min-width: 0;">
+      <a href="#value" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">OUR VALUE</a>
+      <a href="#purpose" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">PURPOSE</a>
+      <a href="#profile" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">PROFILE</a>
+      <a href="#feature" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">FEATURE</a>
+      <a href="#voice" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">VOICE</a>
+      <a href="#about" style="display: flex; align-items: center; padding: 30px clamp(8px, 1.2vw, 20px); font-size: 14px; font-weight: 500; letter-spacing: .1em; white-space: nowrap;">COMPANY</a>
+      <a href="#entry" class="nav-cta" style="display: flex; align-items: center; background: #0c3d25; color: #ffffff; padding: 30px clamp(20px, 2.6vw, 40px); font-size: 16px; font-weight: 700; letter-spacing: .08em; white-space: nowrap;">エントリー</a>
+    </nav>
+  </header>
+
+  <section id="top" style="position: relative; height: 100vh; min-height: 660px; overflow: hidden; background: #0c3d25;">
+    <img src="https://higashihiroshima-intern.com/images/office2.webp" alt="HANARE 古民家オフィス全景" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.03) brightness(.84);">
+    <div style="position: absolute; inset: 0; background: linear-gradient(105deg, rgba(10,12,10,.84) 0%, rgba(10,12,10,.38) 55%, rgba(10,12,10,.7) 100%);"></div>
+        <div style="position: absolute; inset: 0; display: flex; flex-direction: column; justify-content: flex-end; padding: 0 40px 96px; max-width: 1400px; margin: 0 auto;">
+      <p style="font-size: 13px; font-weight: 700; letter-spacing: .26em; color: #7fd8a2; margin: 0 0 28px; animation: fadeUp 1s ease both .1s;">LONG-TERM INTERNSHIP / HIGASHI-HIROSHIMA</p>
+      <h1 style="font-family: 'Zen Old Mincho', serif; font-weight: 500; font-size: clamp(40px, 7.2vw, 104px); line-height: 1.2; letter-spacing: .06em; color: #ffffff; margin: 0; text-shadow: 0 2px 28px rgba(4,30,18,.4); animation: fadeUp 1.2s ease both .2s;">東広島から未来へ</h1>
+      <p style="font-family: 'Zen Old Mincho', serif; font-size: clamp(18px, 1.5vw, 21px); letter-spacing: .12em; line-height: 2; color: rgba(255,255,255,.88); margin: 36px 0 0; animation: fadeUp 1.2s ease both .45s;">学生が主役となる、新しい金融インフラの挑戦。</p>
+    </div>
+    <div style="position: absolute; right: 40px; bottom: 0; display: flex; flex-direction: column; align-items: center; gap: 14px;">
+      <span style="font-size: 10px; letter-spacing: .3em; writing-mode: vertical-rl; color: rgba(255,255,255,.75);">SCROLL</span>
+      <span style="display: block; width: 1px; height: 76px; background: linear-gradient(to bottom, rgba(255,255,255,.85), transparent); transform-origin: top; animation: lineGrow 2.2s ease-in-out infinite;"></span>
+    </div>
+  </section>
+
+  <section id="value" style="position: relative; padding: 150px 40px 130px; max-width: 1400px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 90px; align-items: start;">
+      <div>
+        <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>01 OUR VALUE</p>
+        <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0;">新しい銀行を<br>つくっています。</h2>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 30px; font-size: 18px; line-height: 2.3; letter-spacing: .05em; color: rgba(16,36,26,.82); padding-top: 6px;">
+        <p style="margin: 0;">従来の銀行は「支店」を構えて金融サービスを届けてきました。<br>わたしたちは「ITサービス」を通じて同じことをやろうとしています。</p>
+        <p style="margin: 0;">具体的には、建設業界の会社が使う業務管理ツールを無料で提供し、そこに資金繰りの支援や決済の仕組みを組み合わせる。</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.9; letter-spacing: .09em; color: #0c3d25; border-left: 3px solid #1c8a4e; padding-left: 26px; margin: 8px 0 0;">お客様の仕事を便利にしながら、金融で稼ぐ。<br>これが、わたしたちが考える「新しい銀行」の形です。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="purpose" style="position: relative; padding: 0 40px 130px; max-width: 1400px; margin: 0 auto;">
+    <div style="display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 90px; align-items: start;">
+      <div style="position: sticky; top: 130px;">
+        <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>02 HANARE PURPOSE</p>
+        <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0 0 52px;">東広島で<br>本物の「ビジネス力」を。</h2>
+        <img src="https://higashihiroshima-intern.com/images/office1.webp" alt="HANAREオフィス環境（ウッドデッキ廊下）" style="width: 100%; aspect-ratio: 4 / 3; object-fit: cover; filter: saturate(1.2) contrast(1.03);">
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 32px; font-size: 18px; line-height: 2.3; letter-spacing: .05em; color: rgba(16,36,26,.82); padding-top: 6px;">
+        <p style="margin: 0;">「仕事ができる」ってなんだろう。</p>
+        <p style="margin: 0;">例えば、言われたタスクを早く正確にこなすこと？<br>それも一つの答えだけど、インベストデザインではちょっと違う。</p>
+        <p style="margin: 0;">目の前の作業の先にある事業全体の数字。<br>その数字を動かすためのデータ分析や営業戦略。<br>メンバー一人ひとりが熱量を持って動ける組織の空間やマネジメント。</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: clamp(22px, 2.2vw, 32px); line-height: 1.7; letter-spacing: .1em; color: #1c8a4e; margin: 8px 0;">すべて繋がっている。</p>
+        <p style="margin: 0;">その全体像が見えて初めて、本物の「ビジネス力」が身につくはず。</p>
+        <p style="margin: 0;">だから、東広島の「HANARE」は単なるアルバイトの場じゃない。</p>
+        <p style="margin: 0;">建設×金融という今までになかった事業と、大きなお金。<br>学生が主役となって、自らの手で動かせる場所です。</p>
+        <p style="background: #0c3d25; color: #ffffff; padding: 38px 40px; font-family: 'Zen Old Mincho', serif; font-size: clamp(20px, 1.9vw, 28px); line-height: 1.9; letter-spacing: .1em; margin: 14px 0 0;">ここでの経験は、<br>一生モノの「自信」になる。</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="profile" style="padding: 0 40px 150px; max-width: 1400px; margin: 0 auto;">
+    <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 8px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>03 求める人物像</p>
+    <p style="font-size: 13px; font-weight: 500; letter-spacing: .24em; color: rgba(16,36,26,.45); margin: 0 0 70px 50px;">DESIRED PROFILE</p>
+    <div style="display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 80px; align-items: start;">
+      <div style="display: flex; flex-direction: column; gap: 52px;">
+        <h2 style="position: relative; display: inline-block; align-self: flex-start; font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(30px, 3.9vw, 58px); line-height: 1.5; letter-spacing: .08em; color: #0c3d25; margin: 0;">
+          <span style="position: relative; z-index: 1;">本気の人だけ<br>来てほしい。</span>
+        </h2>
+        <p style="font-size: 16px; font-weight: 500; letter-spacing: .2em; color: rgba(16,36,26,.5); margin: 0;">Only for those who are serious.</p>
+        <div style="display: flex; flex-direction: column; gap: 28px; font-size: 18px; line-height: 2.2; letter-spacing: .05em; color: rgba(16,36,26,.82); border-top: 1px solid rgba(16,36,26,.16); padding-top: 40px;">
+          <p style="margin: 0;">はっきり言います。半端な気持ちの人には、この環境は向いていません。ここで扱うのは実際のお客様の資金と、会社の売上そのものです。学生だからという理由で守ってもらえる仕事はありませんし、任せた裁量を途中で放り出されると、その分だけ事業が止まります。</p>
+          <p style="margin: 0;">逆に、本気で取り組む人には、他では得られないものを渡します。数千万円規模のサービスの数字を動かす裁量、経営陣との距離、後輩を率いる立場。「学生にしては頑張った」ではなく、社会人と同じ基準で評価されたい人に来てほしいと考えています。</p>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <div style="display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 24px; align-items: start; background: #ffffff; border-left: 4px solid #1c8a4e; padding: 34px 34px;">
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 40px; line-height: 1; color: #1c8a4e;">01</span>
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 23px; line-height: 1.85; letter-spacing: .06em; color: #0c3d25; text-wrap: pretty;">言われた作業をこなすのではなく、事業の数字に責任を持ちたい人</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 24px; align-items: start; background: #ffffff; border-left: 4px solid #1c8a4e; padding: 34px 34px;">
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 40px; line-height: 1; color: #1c8a4e;">02</span>
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 23px; line-height: 1.85; letter-spacing: .06em; color: #0c3d25; text-wrap: pretty;">できない理由を並べる前に、まず打席に立てる人</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 24px; align-items: start; background: #ffffff; border-left: 4px solid #1c8a4e; padding: 34px 34px;">
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 40px; line-height: 1; color: #1c8a4e;">03</span>
+          <span style="font-family: 'Zen Old Mincho', serif; font-size: 23px; line-height: 1.85; letter-spacing: .06em; color: #0c3d25; text-wrap: pretty;">半年、一年と腰を据えて、チームの成果まで背負う覚悟のある人</span>
+        </div>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: 22px; line-height: 1.9; letter-spacing: .08em; color: #0c3d25; margin: 12px 0 0;">一つでも当てはまるなら、話を聞かせてください。</p>
+      </div>
+    </div>
+  </section>
+
+  <section style="overflow: hidden; padding: 0 0 140px;">
+    <div style="display: flex; width: max-content; gap: 18px; animation: marquee 46s linear infinite; will-change: transform;">
+      <img src="https://higashihiroshima-intern.com/images/office5.webp" alt="オフィス室内・書棚と照明" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office1.webp" alt="HANARE ウッドデッキ廊下" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office2.webp" alt="HANARE オフィス全景" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office3.webp" alt="HANARE 水鉢と庭園" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office4.webp" alt="HANARE 談笑風景" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office5.webp" alt="オフィス室内・書棚と照明" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office1.webp" alt="HANARE ウッドデッキ廊下" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office2.webp" alt="HANARE オフィス全景" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office3.webp" alt="HANARE 水鉢と庭園" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+      <img src="https://higashihiroshima-intern.com/images/office4.webp" alt="HANARE 談笑風景" style="height: 330px; width: auto; object-fit: cover; filter: saturate(1.2);">
+    </div>
+  </section>
+
+  <section id="feature" style="padding: 0 40px 150px; max-width: 1400px; margin: 0 auto;">
+    <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>04 FEATURE</p>
+    <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0 0 90px;">HANARE長期インターンの3つの特徴</h2>
+
+    <article style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 60px; padding: 54px 0; border-top: 1px solid rgba(16,36,26,.16);">
+      <div>
+        <p style="font-size: 13px; font-weight: 700; letter-spacing: .2em; color: rgba(16,36,26,.45); margin: 0 0 8px;">FEATURE</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: 66px; line-height: 1; color: #1c8a4e; margin: 0;">01</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(22px, 2.2vw, 34px); line-height: 1.6; letter-spacing: .06em; color: #0c3d25; margin: 0 0 26px;">最前線のリアルビジネスに挑む裁量</h3>
+        <p style="font-size: 18px; line-height: 2.1; letter-spacing: .04em; color: rgba(16,36,26,.78); margin: 0; max-width: 74ch; text-wrap: pretty;">単なる作業手伝いや事務アルバイトではなく、最初から正社員と同等の重みがある裁量を付与します。数千万円規模のフィンテックサービスの営業、データ分析、顧客開拓など、リアルな現場で日々PDCAを回し続けるため、普通の学生生活では絶対に届かない速度で、どこに行っても通用する高い「市場価値」が身につきます。</p>
+      </div>
+    </article>
+
+    <article style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 60px; padding: 54px 0; border-top: 1px solid rgba(16,36,26,.16);">
+      <div>
+        <p style="font-size: 13px; font-weight: 700; letter-spacing: .2em; color: rgba(16,36,26,.45); margin: 0 0 8px;">FEATURE</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: 66px; line-height: 1; color: #1c8a4e; margin: 0;">02</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(22px, 2.2vw, 34px); line-height: 1.6; letter-spacing: .06em; color: #0c3d25; margin: 0 0 26px;">市場価値に直結し、確かな成果へ結実する報酬</h3>
+        <p style="font-size: 18px; line-height: 2.1; letter-spacing: .04em; color: rgba(16,36,26,.78); margin: 0; max-width: 74ch; text-wrap: pretty;">本気でビジネスに向き合い、組織に貢献した成果は報酬として確かに結実します。インベストデザインでは、学生の頑張りや成果、組織への貢献度に応じて明確に評価される「4つのグレード制」を導入しており、ステップアップするごとに時給も最高2,000円まで上昇します。</p>
+      </div>
+    </article>
+
+    <article style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 60px; padding: 54px 0; border-top: 1px solid rgba(16,36,26,.16); border-bottom: 1px solid rgba(16,36,26,.16);">
+      <div>
+        <p style="font-size: 13px; font-weight: 700; letter-spacing: .2em; color: rgba(16,36,26,.45); margin: 0 0 8px;">FEATURE</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: 66px; line-height: 1; color: #1c8a4e; margin: 0;">03</p>
+      </div>
+      <div>
+        <h3 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(22px, 2.2vw, 34px); line-height: 1.6; letter-spacing: .06em; color: #0c3d25; margin: 0 0 26px;">学生主導の自律型組織「HANARE」を率いる経験</h3>
+        <p style="font-size: 18px; line-height: 2.1; letter-spacing: .04em; color: rgba(16,36,26,.78); margin: 0; max-width: 74ch; text-wrap: pretty;">東広島の古民家オフィス（HANARE）は、ただの作業場ではなく「学生が学生をマネジメントする」常時30名規模の独立した自律型組織です。ただ実務をこなすだけでなく、自らチームを率い、KPIを管理し、組織を拡大・運営させるという、普通の学生生活では絶対に得られない「本物の経営・マネジメント経験」が血肉になります。</p>
+      </div>
+    </article>
+  </section>
+
+  <section id="voice" style="padding: 0 40px 150px; max-width: 1400px; margin: 0 auto;">
+    <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>05 VOICE</p>
+    <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0 0 70px;">メンバーの声</h2>
+    <div style="background: #ffffff; border-top: 3px solid #1c8a4e; padding: 56px 56px 44px; display: flex; flex-direction: column; gap: 32px;">
+      <p id="voice-label" style="font-size: 14px; font-weight: 700; letter-spacing: .2em; color: #1c8a4e; margin: 0;"></p>
+      <p id="voice-quote" style="font-family: 'Zen Old Mincho', serif; font-size: 22px; line-height: 2.1; letter-spacing: .05em; color: rgba(16,36,26,.9); margin: 0; min-height: 6.4em; max-width: 60ch; text-wrap: pretty;"></p>
+      <div style="display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap; padding-top: 20px; border-top: 1px solid rgba(16,36,26,.12);">
+        <div style="display: flex; align-items: center; gap: 16px;">
+          <div id="voice-avatar" role="img" style="width: 52px; height: 52px; border-radius: 50%; flex: none; background-color: #e3e5dd; background-size: cover; background-position: center;"></div>
+          <span id="voice-role" style="font-size: 18px; letter-spacing: .06em; color: rgba(16,36,26,.65);"></span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 18px;">
+          <span id="voice-counter" style="font-family: 'Zen Old Mincho', serif; font-size: 24px; letter-spacing: .06em; color: rgba(16,36,26,.55);"></span>
+          <button type="button" id="voice-prev" class="voice-prev" style="background: transparent; border: 1px solid rgba(16,36,26,.28); color: #0c3d25; padding: 16px 26px; font-size: 17px; font-weight: 700; letter-spacing: .1em; cursor: pointer; transition: background .3s ease, border-color .3s ease, color .3s ease;">← 前の声</button>
+          <button type="button" id="voice-next" class="voice-next" style="background: #1c8a4e; border: 1px solid #1c8a4e; color: #ffffff; padding: 16px 26px; font-size: 17px; font-weight: 700; letter-spacing: .1em; cursor: pointer; transition: background .3s ease, border-color .3s ease;">次の声 →</button>
+        </div>
+      </div>
+    </div><div style="margin-top: 24px; background: #0c3d25; padding: 52px 56px; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; gap: 56px; align-items: center;">
+      <div style="display: flex; flex-direction: column; gap: 20px;">
+        <p style="font-size: 14px; font-weight: 700; letter-spacing: .2em; color: #7fd8a2; margin: 0;">WHY HANARE</p>
+        <p style="font-family: 'Zen Old Mincho', serif; font-size: clamp(24px, 2.2vw, 32px); line-height: 1.7; letter-spacing: .07em; color: #ffffff; margin: 0;">インターンで社会に通用する<br>力を身に着ける。</p>
+      </div>
+      <p style="font-size: 18px; line-height: 2; letter-spacing: .04em; color: rgba(255,255,255,.78); margin: 0;">常時30名の学生が、東広島の古民家オフィスで実際の事業を動かしています。まずは一度、現場を見に来てください。</p>
+      <a href="#entry" class="cta-white" style="display: inline-flex; align-items: center; gap: 18px; background: #1c8a4e; color: #ffffff; padding: 24px 40px; font-size: 17px; font-weight: 700; letter-spacing: .12em; white-space: nowrap;">エントリーする<span>→</span></a>
+    </div>
+  </section>
+
+  <section style="background: #0c3d25; color: #ffffff; padding: 130px 40px;">
+    <div style="max-width: 1400px; margin: 0 auto;">
+      <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #7fd8a2; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #7fd8a2;"></span>06 REQUIREMENTS</p>
+      <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; margin: 0 0 64px;">募集要項</h2>
+      <div style="border-top: 1px solid rgba(255,255,255,.28);">
+        <div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,.16);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #7fd8a2; padding-top: 2px;">職種</span>
+          <span style="font-size: 18px; line-height: 2; letter-spacing: .05em;">長期インターンシップ（営業・データ分析・組織マネジメント）</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,.16);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #7fd8a2; padding-top: 2px;">勤務地</span>
+          <span style="font-size: 18px; line-height: 2; letter-spacing: .05em;">東広島オフィス「HANARE」（広島県東広島市 / 古民家オフィス）</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,.16);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #7fd8a2; padding-top: 2px;">対象</span>
+          <span style="font-size: 18px; line-height: 2; letter-spacing: .05em;">大学1年生〜4年生（現状の学生生活に物足りなさを感じている方）</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; padding: 30px 0; border-bottom: 1px solid rgba(255,255,255,.16);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #7fd8a2; padding-top: 2px;">勤務条件</span>
+          <span style="font-size: 18px; line-height: 2; letter-spacing: .05em;">週3日以上、シフト制（テスト期間や就活などのスケジュールは柔軟に調整します）</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 40px; padding: 34px 0; border-bottom: 1px solid rgba(255,255,255,.16);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .06em; color: #7fd8a2; padding-top: 2px;">待遇</span>
+          <div style="display: flex; flex-direction: column; gap: 22px;">
+            <p style="font-size: 18px; line-height: 2; letter-spacing: .05em; margin: 0;">成果と組織への貢献度に応じた「4つのグレード制」。ステップアップごとに時給は最高2,000円まで上昇します。</p>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1px; background: rgba(255,255,255,.16);">
+              <div style="display: flex; flex-direction: column; gap: 20px; padding: 34px 30px 36px; background: rgba(255,255,255,.03);">
+                <div style="height: 2px; background: rgba(255,255,255,.16);">
+                  <div style="width: 25%; height: 2px; background: #7fd8a2;"></div>
+                </div>
+                <p style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: #7fd8a2; margin: 0;">① トレーニー</p>
+                <p style="display: flex; align-items: baseline; gap: 4px; font-family: 'Zen Old Mincho', serif; color: #ffffff; margin: 0;">
+                  <span style="font-size: 44px; line-height: 1; letter-spacing: .02em;">1,200</span>
+                  <span style="font-size: 18px; letter-spacing: .06em;">円 / 時</span>
+                </p>
+                <p style="font-size: 18px; letter-spacing: .04em; color: rgba(255,255,255,.6); margin: 0;">入社〜2ヶ月</p>
+                <p style="font-size: 18px; line-height: 1.95; letter-spacing: .03em; color: rgba(255,255,255,.84); margin: 0; text-wrap: pretty;">まずは研修からスタート。業務の基礎を徹底的に習得します。</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 20px; padding: 34px 30px 36px; background: rgba(255,255,255,.03);">
+                <div style="height: 2px; background: rgba(255,255,255,.16);">
+                  <div style="width: 50%; height: 2px; background: #7fd8a2;"></div>
+                </div>
+                <p style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: #7fd8a2; margin: 0;">② プレイヤー</p>
+                <p style="display: flex; align-items: baseline; gap: 4px; font-family: 'Zen Old Mincho', serif; color: #ffffff; margin: 0;">
+                  <span style="font-size: 44px; line-height: 1; letter-spacing: .02em;">1,300</span>
+                  <span style="font-size: 18px; letter-spacing: .06em;">円 / 時</span>
+                </p>
+                <p style="font-size: 18px; letter-spacing: .04em; color: rgba(255,255,255,.6); margin: 0;">3ヶ月目〜</p>
+                <p style="font-size: 18px; line-height: 1.95; letter-spacing: .03em; color: rgba(255,255,255,.84); margin: 0; text-wrap: pretty;">一人立ち。営業架電やデータ分析などの実務を責任を持って遂行。</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 20px; padding: 34px 30px 36px; background: rgba(255,255,255,.03);">
+                <div style="height: 2px; background: rgba(255,255,255,.16);">
+                  <div style="width: 75%; height: 2px; background: #7fd8a2;"></div>
+                </div>
+                <p style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: #7fd8a2; margin: 0;">③ リーダー</p>
+                <p style="display: flex; align-items: baseline; gap: 4px; font-family: 'Zen Old Mincho', serif; color: #ffffff; margin: 0;">
+                  <span style="font-size: 44px; line-height: 1; letter-spacing: .02em;">1,600</span>
+                  <span style="font-size: 18px; letter-spacing: .06em;">円 / 時</span>
+                </p>
+                <p style="font-size: 18px; letter-spacing: .04em; color: rgba(255,255,255,.6); margin: 0;">6ヶ月目〜</p>
+                <p style="font-size: 18px; line-height: 1.95; letter-spacing: .03em; color: rgba(255,255,255,.84); margin: 0; text-wrap: pretty;">後輩の指導やシフト管理、プロジェクト全体の進捗管理を担い始めます。</p>
+              </div>
+              <div style="display: flex; flex-direction: column; gap: 20px; padding: 34px 30px 36px; background: rgba(255,255,255,.03);">
+                <div style="height: 2px; background: rgba(255,255,255,.16);">
+                  <div style="width: 100%; height: 2px; background: #7fd8a2;"></div>
+                </div>
+                <p style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: #7fd8a2; margin: 0;">④ マネージャー</p>
+                <p style="display: flex; align-items: baseline; gap: 4px; font-family: 'Zen Old Mincho', serif; color: #ffffff; margin: 0;">
+                  <span style="font-size: 44px; line-height: 1; letter-spacing: .02em;">2,000</span>
+                  <span style="font-size: 18px; letter-spacing: .06em;">円 / 時</span>
+                </p>
+                <p style="font-size: 18px; letter-spacing: .04em; color: rgba(255,255,255,.6); margin: 0;">1年目〜</p>
+                <p style="font-size: 18px; line-height: 1.95; letter-spacing: .03em; color: rgba(255,255,255,.84); margin: 0; text-wrap: pretty;">チーム全体の管理・戦略立案を担い、組織を動かす中心へ。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" style="position: relative; padding: 0 0 150px;">
+    <div style="position: relative; height: 58vh; min-height: 400px; overflow: hidden;">
+      <img src="https://higashihiroshima-intern.com/images/office2.webp" alt="東広島古民家オフィス HANARE 全景" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; filter: contrast(1.02);">
+      <div style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(10,12,10,.78), rgba(10,12,10,.05));"></div>
+      <p style="position: absolute; left: 40px; bottom: 34px; font-size: 18px; font-weight: 500; letter-spacing: .1em; color: #ffffff; margin: 0;">サテライト拠点 東広島古民家オフィス HANARE</p>
+    </div>
+    <div style="max-width: 1400px; margin: 0 auto; padding: 100px 40px 0; display: grid; grid-template-columns: minmax(0, 320px) minmax(0, 1fr); gap: 90px; align-items: start;">
+      <div>
+        <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>07 COMPANY</p>
+        <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0;">会社概要</h2>
+      </div>
+      <div style="border-top: 2px solid #0c3d25;">
+        <div style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 24px 0; border-bottom: 1px solid rgba(16,36,26,.12);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.55);">会社名</span>
+          <span style="font-size: 18px; line-height: 1.9;">インベストデザイン株式会社</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 24px 0; border-bottom: 1px solid rgba(16,36,26,.12);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.55);">設立</span>
+          <span style="font-size: 18px; line-height: 1.9;">2020年7月</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 24px 0; border-bottom: 1px solid rgba(16,36,26,.12);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.55);">本社</span>
+          <span style="font-size: 18px; line-height: 1.9;">〒102-0082 東京都千代田区麹町2丁目2−22 ACN半蔵門ビル10階</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 24px 0; border-bottom: 1px solid rgba(16,36,26,.12);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.55);">HANARE（大学生向けオフィス）</span>
+          <span style="font-size: 18px; line-height: 1.9;">〒739-0021 広島県東広島市西条町助実1564−1 HANARE</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 32px; padding: 24px 0; border-bottom: 1px solid rgba(16,36,26,.12);">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.55);">事業内容</span>
+          <span style="font-size: 18px; line-height: 1.9;">建設業界向け金融インフラサービスの開発・提供、DXコンサルティング</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="entry" style="position: relative; padding: 120px 40px 130px; background: #ffffff; border-top: 1px solid rgba(16,36,26,.12);">
+    <div style="max-width: 900px; margin: 0 auto;">
+      <p style="display: inline-flex; align-items: center; gap: 12px; font-size: 13px; font-weight: 700; letter-spacing: .24em; color: #1c8a4e; margin: 0 0 30px;"><span style="display: block; width: 34px; height: 2px; background: #1c8a4e;"></span>08 ENTRY</p>
+      <h2 style="font-family: 'Zen Old Mincho', serif; font-weight: 600; font-size: clamp(28px, 3.4vw, 50px); line-height: 1.55; letter-spacing: .06em; color: #0c3d25; margin: 0 0 64px;">エントリーフォーム</h2>
+      <form id="entry-form" style="display: flex; flex-direction: column; gap: 40px;">
+        <label style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.75);">お名前<span style="background: #1c8a4e; color: #ffffff; margin-left: 12px; padding: 4px 10px; font-size: 13px; letter-spacing: .08em;">必須</span></span>
+          <input type="text" required class="form-input" style="background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); color: #10241a; font-size: 18px; padding: 18px 18px; outline: none;">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.75);">大学名・学部・学年<span style="background: #1c8a4e; color: #ffffff; margin-left: 12px; padding: 4px 10px; font-size: 13px; letter-spacing: .08em;">必須</span></span>
+          <input type="text" required class="form-input" style="background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); color: #10241a; font-size: 18px; padding: 18px 18px; outline: none;">
+        </label>
+        <label style="display: flex; flex-direction: column; gap: 12px;">
+          <span style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.75);">メールアドレス<span style="background: #1c8a4e; color: #ffffff; margin-left: 12px; padding: 4px 10px; font-size: 13px; letter-spacing: .08em;">必須</span></span>
+          <input type="email" required class="form-input" style="background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); color: #10241a; font-size: 18px; padding: 18px 18px; outline: none;">
+        </label>
+        <fieldset style="border: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px;">
+          <legend style="font-size: 18px; font-weight: 700; letter-spacing: .04em; color: rgba(16,36,26,.75); padding: 0; margin-bottom: 8px;">インターンに興味を持ったきっかけ<span style="color: rgba(16,36,26,.45); margin-left: 12px; font-size: 14px; font-weight: 400;">複数選択可</span></legend>
+          <label class="reason-label" style="display: flex; align-items: center; gap: 16px; background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); padding: 22px 24px; cursor: pointer; font-size: 18px; letter-spacing: .04em;">
+            <input type="checkbox" style="width: 16px; height: 16px; accent-color: #1c8a4e;">
+            <span>就活に向けて、他の人とは違う経験をしてみたい</span>
+          </label>
+          <label class="reason-label" style="display: flex; align-items: center; gap: 16px; background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); padding: 22px 24px; cursor: pointer; font-size: 18px; letter-spacing: .04em;">
+            <input type="checkbox" style="width: 16px; height: 16px; accent-color: #1c8a4e;">
+            <span>将来経営に興味があるため、実践的に学びたい</span>
+          </label>
+          <label class="reason-label" style="display: flex; align-items: center; gap: 16px; background: #f4f4ee; border: 1px solid rgba(16,36,26,.16); padding: 22px 24px; cursor: pointer; font-size: 18px; letter-spacing: .04em;">
+            <input type="checkbox" style="width: 16px; height: 16px; accent-color: #1c8a4e;">
+            <span>アルバイトでは満足できなくなった</span>
+          </label>
+        </fieldset>
+        <button type="submit" class="submit-btn" style="align-self: flex-start; margin-top: 10px; background: #1c8a4e; color: #ffffff; border: 1px solid #1c8a4e; padding: 24px 64px; font-size: 18px; font-weight: 700; letter-spacing: .16em; cursor: pointer; transition: background .3s ease, color .3s ease;">エントリーする</button>
+        <p id="submitted-msg" style="display: none; font-family: 'Zen Old Mincho', serif; font-size: 18px; letter-spacing: .08em; color: #1c8a4e; margin: 0;">送信ありがとうございます。担当者よりご連絡いたします。</p>
+      </form>
+    </div>
+  </section>
+
+  <footer style="background: #0c3d25; padding: 60px 40px; display: flex; align-items: center; justify-content: space-between; gap: 32px; flex-wrap: wrap;">
+    <img src="https://higashihiroshima-intern.com/images/logo.webp" alt="インベストデザイン株式会社" style="height: 24px; width: auto; filter: brightness(0) invert(1); opacity: .92;">
+    <p style="font-size: 14px; letter-spacing: .12em; color: rgba(255,255,255,.6); margin: 0;">© INVEST DESIGN INC. / HANARE HIGASHI-HIROSHIMA</p>
+  </footer>
+</div>
+
+<script>
+(function () {
+  var voices = [
+    {
+      label: "UNIVERSITY INTERN VOICE",
+      role: "大学生インターン（開発・企画）",
+      img: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=150&q=80",
+      quote: "「社長や社員の方々と直接話す機会が多く、アルバイト以上に『社会との接点』をリアルに感じられます。また、インターンを通じて、技術的な内容をエンジニア以外のメンバーにも分かりやすく伝えるコミュニケーション能力の重要性を学びました。」"
+    },
+    {
+      label: "EMPLOYEE VOICE",
+      role: "中途入社 社員（営業・マーケティング）",
+      img: "https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=150&q=80",
+      quote: "「『20代のうちに多様な経験を積みたい』という想いから入社を決意しました。前職の強みを活かせる営業職を軸にしつつ、マーケティングなど会社全体に関わる幅広い業務に携われること、そして『個人ではなくチームで業績を上げる環境』に魅力を感じました。」"
+    },
+    {
+      label: "MEMBER VOICE",
+      role: "復職メンバー（業務効率化・DX）",
+      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=150&q=80",
+      quote: "「ClaudeなどのAIツールの導入により手作業が自動化され、作業時間が半分以下に短縮されています。ベースの温かい雰囲気は変わらないため、違和感なく仕事に戻れました。今後は、以前は未経験だったマーケティングのサポート業務にも領域を広げ、積極的に挑戦していきたいです。」"
+    },
+    {
+      label: "EMPLOYEE VOICE",
+      role: "事業開発・営業 メンバー",
+      img: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&w=150&q=80",
+      quote: "「『建築業界に特化したファクタリングサービス』という、独自の競合優位性の高さに魅力を感じて入社しました。現在の業務には非常に手応えを感じています。この会社は、コスト対効果をしっかり説明できれば、新しい提案ややりたい業務の9割以上が承認される環境なので、日々モチベーション高く挑戦できています。」"
+    }
+  ];
+
+  var active = 0;
+  var timer;
+
+  function pad(n) { return String(n).padStart(2, "0"); }
+
+  function render() {
+    var v = voices[active];
+    document.getElementById("voice-label").textContent = v.label;
+    document.getElementById("voice-quote").textContent = v.quote;
+    document.getElementById("voice-role").textContent = v.role;
+    var avatar = document.getElementById("voice-avatar");
+    avatar.style.backgroundImage = "url(" + v.img + ")";
+    avatar.setAttribute("aria-label", v.role);
+    document.getElementById("voice-counter").textContent = pad(active + 1) + " / " + pad(voices.length);
+  }
+
+  function startTimer() {
+    timer = setInterval(function () {
+      active = (active + 1) % voices.length;
+      render();
+    }, 7000);
+  }
+
+  function move(step) {
+    clearInterval(timer);
+    active = (active + step + voices.length) % voices.length;
+    render();
+    startTimer();
+  }
+
+  document.getElementById("voice-prev").addEventListener("click", function () { move(-1); });
+  document.getElementById("voice-next").addEventListener("click", function () { move(1); });
+  render();
+  startTimer();
+
+  document.getElementById("entry-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    document.getElementById("submitted-msg").style.display = "block";
+  });
+})();
+</script>
+</body>
+</html>
