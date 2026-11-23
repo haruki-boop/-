@@ -1,20 +1,9 @@
 {
   "name": "saiyou",
-  "main": "src/worker.js",
   "compatibility_date": "2026-09-01",
   "assets": {
     // 公開するのは public/ フォルダの中身だけ（CLAUDE.md などは公開されない）
     "directory": "./public",
-    "binding": "ASSETS",
-    "not_found_handling": "404-page",
-    // /api/ で始まるアクセスだけ Worker が先に受け取る（応募フォーム用）
-    "run_worker_first": ["/api/*"]
-  },
-  // 応募フォームのメール送信（Cloudflare の Email Routing で service@invest-d.com の認証が必要）
-  "send_email": [{ "name": "MAIL", "destination_address": "service@invest-d.com" }],
-  "vars": {
-    "TO_ADDRESS": "service@invest-d.com",
-    // 送信元。Email Routing を有効にした西条インターン.com のドメインのアドレスにする
-    "FROM_ADDRESS": "noreply@xn--eckuc3hb8bw080d155b.com"
+    "not_found_handling": "404-page"
   }
 }
