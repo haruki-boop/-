@@ -2,7 +2,8 @@
   "name": "saiyou",
   "compatibility_date": "2026-09-01",
   "assets": {
-    "directory": "./",
+    // 公開するのは public/ フォルダの中身だけ（CLAUDE.md などは公開されない）
+    "directory": "./public",
     "not_found_handling": "404-page"
   }
 }
