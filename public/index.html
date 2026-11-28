@@ -503,6 +503,14 @@ button { cursor: pointer; }
   .sticky-cta .button { min-height: 44px; flex-shrink: 0; }
   .site-footer { padding-bottom: 76px; }
 }
+.feature-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 13px; }
+.feature-card { min-width: 0; padding: clamp(20px, 3vw, 36px); background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--blue); border-radius: 3px; }
+.feature-no { font: 600 clamp(2.6rem, 4.4vw, 3.8rem)/1 var(--mincho); color: var(--blue); letter-spacing: 0; }
+.feature-card h3 { font-size: clamp(1.25rem, 2vw, 1.7rem); line-height: 1.45; font-weight: 700; margin-top: 14px; }
+.feature-card h3 + p { margin-top: 12px; color: var(--muted); font-size: .94rem; font-weight: 500; }
+.feature-catch { margin-top: clamp(22px, 3.5vw, 40px); text-align: center; font-family: var(--mincho); font-weight: 700; font-size: clamp(1.15rem, 2.6vw, 1.9rem); line-height: 1.6; }
+.feature-catch strong { color: var(--blue); font-weight: 800; }
+@media (max-width: 690px) { .feature-grid { grid-template-columns: 1fr; gap: 9px; } .feature-card { padding: 18px; } .feature-no { font-size: 2.2rem; } }
 #hero-title:focus, #event-title:focus { outline: none; }
 
 .pay-section { padding-bottom: clamp(40px, 5vw, 64px); }
@@ -712,6 +720,32 @@ body { font-variant-numeric: lining-nums; }
         <p>受発注から資金繰りまで、<br>中小企業の日々の業務を支える。</p>
         <ul><li>受発注管理</li><li>見積AI</li><li>早払い（資金支援）</li></ul>
       </div>
+    </section>
+
+    <section class="section shell features" id="features" aria-labelledby="features-title">
+      <div class="section-intro">
+        <p class="eyebrow"><span></span>FEATURES</p>
+        <h2 id="features-title">このアルバイトの、<br>3つの特徴。</h2>
+        <p class="section-lead">学業との両立も、自分の成長も。働き方は、自分で選べます。</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card reveal">
+          <p class="feature-no">01</p>
+          <h3>好きな時間に<br>働ける。</h3>
+          <p>授業や予定に合わせて、働く時間を柔軟に調整できます。学業と両立しながら続けられます。</p>
+        </article>
+        <article class="feature-card reveal">
+          <p class="feature-no">02</p>
+          <h3>好きな場所で<br>働ける。</h3>
+          <p>働く場所も、柔軟に調整できます。拠点は、広島大学から自転車で約25分の古民家オフィス「HANARE」です。</p>
+        </article>
+        <article class="feature-card reveal">
+          <p class="feature-no">03</p>
+          <h3>中小企業の経営者を相手にできる、貴重な経験。</h3>
+          <p>経営者とやり取りし、現場の困りごとを知り、提案につなげる。学生のうちに、社会との接点をリアルに持てます。</p>
+        </article>
+      </div>
+      <p class="feature-catch reveal">好きな時間に、好きな場所で、<strong>好きなだけ働ける。</strong></p>
     </section>
 
     <section class="section shell pay-section" id="pay" aria-labelledby="pay-title">
